@@ -36,3 +36,24 @@ This selector are used in locator method(used to identity the element)
        .post-body-container input
            
 4. XpathSelector
+
+
+
+
+
+<span>
+ <div> GP
+      <a> P
+        <li> C 
+        <li>
+
+
+
+
+
+          div  li
+          span li
+
+
+          a>li
+          div>a
