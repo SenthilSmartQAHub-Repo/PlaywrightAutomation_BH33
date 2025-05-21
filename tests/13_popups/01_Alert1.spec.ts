@@ -12,10 +12,17 @@ test("Alert popup",async({page})=>{
       console.log("message is ", dialogobject.message())
 
        console.log("type of the popup", dialogobject.type())
-       if(dialogobject.type()=='confirm')
+
+       if(dialogobject.type()=='confirm' || 'alert')
        {
-        dialogobject.accept()
+       dialogobject.accept()
        }
+       else if(dialogobject.type()=='prompt')
+       {
+         console.log("message is ", dialogobject.defaultValue())
+         dialogobject.accept("Playwright")
+       }
+     
     })
 
 

@@ -13,8 +13,7 @@
        dialogobject.message();; //Alert message
        dialogobject.accept("welcome")// enter the prompt text 
        dialogobject.type()//alert, confirm, prompt
-
-
+       dialogobject.defaultValue()-- existing value from prompt text
 
 
    4. File upload
