@@ -95,8 +95,6 @@ This selector are used in locator method(used to identity the element)
 
 
 
-          
-
 
 
 
