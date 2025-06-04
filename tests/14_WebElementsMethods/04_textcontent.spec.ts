@@ -29,5 +29,23 @@ test("innerHTML",async({page})=>{
 
 })
 
+test("innerHTML1",async({page})=>{
+
+const date = new Date();
+
+const options: Intl.DateTimeFormatOptions = {
+  weekday: 'long',
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+};
+
+const formattedDate = date.toLocaleDateString('en-GB', options);
+
+console.log(formattedDate); // e.g., "Saturday, 31 May 2025"
+
+
+
+})
 
 

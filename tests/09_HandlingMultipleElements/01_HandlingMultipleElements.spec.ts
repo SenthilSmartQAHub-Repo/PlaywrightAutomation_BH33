@@ -2,6 +2,7 @@ import test from "@playwright/test";
 
 test("title",async({page})=>{
 
+   
    await page.goto("https://playwrightautomationtesting.blogspot.com/2025/01/table-with-checkboxes.html")
 
    const checkboxes=await page.locator("css=input[type='checkbox']").all()
