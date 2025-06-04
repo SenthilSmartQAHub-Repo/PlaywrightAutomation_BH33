@@ -42,6 +42,10 @@ test("finding no of windows and handling mulitple windows",async({page})=>{
 
  }
 
+
+await page.context().close() //all the browsers
+
+
 })
 
 
