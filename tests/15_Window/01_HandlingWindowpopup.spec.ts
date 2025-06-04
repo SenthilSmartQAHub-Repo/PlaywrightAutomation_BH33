@@ -19,7 +19,7 @@ test("perform operation on the child window",async({page})=>{
 
 })
 
-test("finding no of windows",async({page})=>{
+test("finding no of windows and handling mulitple windows",async({page})=>{
 
   await page.goto("https://playwrightautomationtesting.blogspot.com/2025/01/open-course-video-body-font-family.html")
 
