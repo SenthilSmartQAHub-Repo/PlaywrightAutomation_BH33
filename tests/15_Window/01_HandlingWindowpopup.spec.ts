@@ -14,6 +14,11 @@ test("perform operation on the child window",async({page})=>{
 
   console.log(await Newwindowpage.title())
 
+
+ await Newwindowpage.getByRole('link', { name: 'Playwright#1 Playwright' }).click()
+
+
+
   Newwindowpage.close();
 
 

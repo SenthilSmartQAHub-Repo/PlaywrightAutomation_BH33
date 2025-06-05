@@ -31,7 +31,8 @@ timeout : 100000,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
    headless : false ,//headed mode
-   viewport:{width:1536,height:730}
+   viewport:{width:1536,height:730},
+   ignoreHTTPSErrors:true
   },
 
   /* Configure projects for major browsers */
