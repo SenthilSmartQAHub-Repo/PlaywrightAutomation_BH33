@@ -18,11 +18,11 @@ export default defineConfig({
   /* Fail the build on CI if you accidentally left test.only in the source code. */
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
-timeout : 10000000000000000000,
+timeout : 100000,
   /* Opt out of parallel tests on CI. */
   workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
-  reporter: 'html',
+  reporter: [['html',{open:'always'}]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -33,8 +33,8 @@ timeout : 10000000000000000000,
    headless : false ,//headed mode
    viewport:{width:1536,height:730},
    ignoreHTTPSErrors:true,
-   actionTimeout:1000,
-   navigationTimeout:10000
+  //  actionTimeout:1000,
+  //  navigationTimeout:10000
   },
 
   /* Configure projects for major browsers */
