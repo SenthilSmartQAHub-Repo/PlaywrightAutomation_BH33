@@ -33,6 +33,7 @@ timeout : 100000,
    headless : false ,//headed mode
    viewport:{width:1536,height:730},
    ignoreHTTPSErrors:true,
+   storageState:'creds/loginDetails.json'
   //  actionTimeout:1000,
   //  navigationTimeout:10000
   },
