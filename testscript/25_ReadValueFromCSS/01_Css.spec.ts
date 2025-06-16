@@ -11,9 +11,18 @@ const csvdata=parse(fs.readFileSync('testdata/data.csv'),{columns:true,skip_empt
 
 test("Reading values from Css",async({page})=>{
 
-    await page.goto("https://playwrightautomationtesting.blogspot.com/2025/01/blog-post.html")
+    await page.goto("https://playwrightautomationtesting.blogspot.com/2025/05/user-info-form.html")
 
-  await page.getByPlaceholder("Enter your full name").fill(csvdata[0].fullname)
+ 
+    for(let i=1;i<csvdata.length;i++){
+    // find the locator for name, age , fill(data[i],.name or age)
+    
+    //  counrty .selectoptions({label:data[i].country})
+    
+    // and submit
+
+    
+    }
 
 
 })
