@@ -8,6 +8,14 @@ test("form filling",async({page})=>{
 
   await page.getByPlaceholder("Enter your full name").fill(faker.person.fullName())
 
+//email id
+
+//Phone Number:
+
+//Address
+
+//Current Company:
+
 
 
 })
