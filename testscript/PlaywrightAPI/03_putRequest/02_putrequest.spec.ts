@@ -3,7 +3,7 @@ import test, { expect } from "@playwright/test";
 test("Query parameter",async({request})=>{
 
 
-const token="ghp_zi0Ev5o9BT1ct9YhIB2tk8bW"
+const token="ghp_zi0Ev5o9BT1ct9LXYhIB2tk8bW"
 
 
 
@@ -11,7 +11,7 @@ const ORG='SenthilPlaywrightAutomation'
 
 //https://api.github.com/repos/OWNER/REPO
 
-const response=await request.post(`https://api.github.com/orgs/${ORG}/repos`,
+const response=await request.put(`https://api.github.com/orgs/${ORG}/repos`,
 {
  headers:
  {
@@ -20,7 +20,7 @@ const response=await request.post(`https://api.github.com/orgs/${ORG}/repos`,
  },
 data:
 {
-    name:'automation35343',
+    name:'automation35tet343',
     private: false
 }
 }
