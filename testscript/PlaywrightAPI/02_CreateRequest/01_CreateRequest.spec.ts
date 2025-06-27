@@ -3,7 +3,7 @@ import test, { expect } from "@playwright/test";
 test("Query parameter",async({request})=>{
 
 
-const token="ghp_zi0Ev5o9BT1ct9YhIB2tk8bW"
+const token="ghp_zi0YhIB2tk8bW"
 
 
 

@@ -1,0 +1,10 @@
+
+
+POM- Page Object Model
+
+1. Page object model is a design pattern to create object repository for webpage elememts 
+
+2. Each web page there will be corresponding page class there
+
+3. page class contains all the webpage elements of the page and it contains page methods which perform operations on those elements
+
